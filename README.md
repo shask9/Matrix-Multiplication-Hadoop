@@ -44,13 +44,13 @@ Use the output from the Stage 1 Reducer and pass along the same input to the Sta
 #### Pseudocode:
 
 First Map-Reduce job:  
-map(key,line) =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// mapper for matrix M
-  split line into 3 values: i, j, and v  
-  emit(j,new Elem(0,i,v))
+map(key,line) =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// mapper for matrix M  
+&nbsp;&nbsp;&nbsp;&nbsp;split line into 3 values: i, j, and v  
+&nbsp;&nbsp;&nbsp;&nbsp;emit(j,new Elem(0,i,v))
 
-map(key,line) =             // mapper for matrix N  
-  split line into 3 values: i, j, and v  
-  emit(i,new Elem(1,j,v))  
+map(key,line) =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// mapper for matrix N  
+&nbsp;&nbsp;&nbsp;&nbsp;split line into 3 values: i, j, and v  
+&nbsp;&nbsp;&nbsp;&nbsp;emit(i,new Elem(1,j,v))  
 
 reduce(index,values) =  
   A = all v in values with v.tag==0  
