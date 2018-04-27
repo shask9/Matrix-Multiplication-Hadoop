@@ -10,14 +10,14 @@ i,j,value
 .  
 i,j,value
 
-## Output File Format(Resultant Multiplied Matrix):
-i,j,value
-.
-.
-.
-.
-i,j,value
-
+## Output File Format (Resultant Multiplied Matrix):
+i,j,value  
+.  
+.  
+.  
+.  
+i,j,value  
+  
 Input Files with two capacities are provided.
 1) something-small.txt (To check the program in local mode)
 2) something-large.txt (To check the program in distributed mode)
