@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rm -rf multiply.jar classes
+
+module load hadoop/2.6.0
+
+mkdir -p classes
+javac -d classes -cp classes:`$HADOOP_HOME/bin/hadoop classpath` Multiply.java
+jar cf multiply.jar -C classes .
+
+echo "end"
