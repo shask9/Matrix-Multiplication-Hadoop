@@ -44,7 +44,7 @@ Use the output from the Stage 1 Reducer and pass along the same input to the Sta
 #### Pseudocode:
 
 First Map-Reduce job:  
-map(key,line) =             // mapper for matrix M
+map(key,line) =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// mapper for matrix M
   split line into 3 values: i, j, and v  
   emit(j,new Elem(0,i,v))
 
